@@ -5,9 +5,9 @@ import blog, {
 } from "https://deno.land/x/blog@0.4.2/blog.tsx";
 
 blog({
-  title: "えむいーと愉快な仲間たち",
-  description: "VuePressに希望がなさすぎるので移行中",
-  avatar: "assets/03.png",
+  title: "まちカドえむいー",
+  description: "スターライトアーニャです",
+  avatar: "/assets/03.png",
   avatarClass: "rounded-full",
   author: "tkgstrator",
   // dateStyle: "long",
@@ -17,5 +17,7 @@ blog({
     { title: "GitHub", url: "https://github.com/tkgstrator" },
     { title: "Twitter", url: "https://twitter.com/tkgling" },
   ],
+  ogImage: "/assets/header.png",
+  favicon: "/assets/favicon.ico",
   // middlewares: [ga("UA-111335437-2"), redirects({})],]
 });

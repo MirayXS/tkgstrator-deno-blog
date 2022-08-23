@@ -17,7 +17,7 @@ blog({
     { title: "GitHub", url: "https://github.com/tkgstrator" },
     { title: "Twitter", url: "https://twitter.com/tkgling" },
   ],
-  ogImage: "/assets/header.png",
+  ogImage: "/assets/header.jpeg",
   favicon: "/assets/favicon.ico",
   // middlewares: [ga("UA-111335437-2"), redirects({})],]
 });

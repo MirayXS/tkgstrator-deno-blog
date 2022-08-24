@@ -1,4 +1,8 @@
-import blog, { ga, redirects, h } from "./deno_blog/blog.tsx";
+import blog, {
+  ga,
+  redirects,
+  h,
+} from "https://raw.githubusercontent.com/tkgstrator/deno_blog/main/blog.tsx";
 
 blog({
   title: "まちカドえむいー",

@@ -19,6 +19,6 @@ blog({
     twitterCard: "summary",
   },
   favicon: "/assets/favicon.ico",
-  entries: 3,
+  entries: 10,
   // middlewares: [ga("UA-111335437-2"), redirects({})],]
 });

@@ -1,8 +1,4 @@
-import blog, {
-  ga,
-  redirects,
-  h,
-} from "https://raw.githubusercontent.com/tkgstrator/deno_blog/main/blog.tsx";
+import blog, { ga, redirects, h } from "./deno_blog/blog.tsx";
 
 blog({
   title: "まちカドえむいー",
@@ -23,6 +19,6 @@ blog({
     twitterCard: "summary",
   },
   favicon: "/assets/favicon.ico",
-  entries: 10,
-  // middlewares: [ga("UA-111335437-2"), redirects({})],]
+  entries: 2,
+  middlewares: [ga("UA-111335437-2"), redirects({})],
 });

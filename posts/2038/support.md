@@ -8,7 +8,7 @@ description: 頑張っているアーニャちゃんをサポートできるペ�
 
 [ほしいものリスト](https://www.amazon.co.jp/hz/wishlist/ls/1OVWKJ7C5R9XK)を公開しています。
 
-サプライズで届くので楽しいです。ただ、最近モンエナとコーラが山のようにたまっていhttps://www.paypal.com/webapps/billing/plans/subscribe?plan_id=P-5YR614358D8229313MAAAVNAるので、かさばらないやつだと嬉しいです。
+サプライズで届くので楽しいです。ただ、最近モンエナとコーラが山のようにたまっているので、かさばらないやつだと嬉しいです。
 
 ## [PayPal.Me](https://paypal.me/salmonia?country.x=JP&locale.x=ja_JP)
 

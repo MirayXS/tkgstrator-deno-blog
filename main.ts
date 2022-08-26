@@ -3,7 +3,12 @@ import blog, {
   redirects,
   h,
 } from "https://raw.githubusercontent.com/tkgstrator/deno_blog/main/blog.tsx";
-import highlightJs from "https://cdn.skypack.dev/highlight.js@11.6.0?dts";
+import "https://esm.sh/prismjs@1.28.0/components/prism-swift.min?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-typescript.min?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-python.min?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-bash.min?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-json.min?no-check";
+import "https://esm.sh/prismjs@1.28.0/components/prism-scheme.min?no-check";
 
 blog({
   title: "まちカドえむいー",

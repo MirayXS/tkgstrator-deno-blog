@@ -100,7 +100,7 @@ export class AppModule {}
 
 さて、ユーザを定義したのでユーザを操作できるエンドポイントを作成します。
 
-```
+```bash
 nest g module users
 nest g service users
 nest g controller users

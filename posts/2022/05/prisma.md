@@ -1,6 +1,6 @@
 ---
 title: Prismaの使い方を学ぶ
-publish_date: 2022-05-09
+publish_date: 2022-05-08
 tags:
   - プログラミング
   - Typescript

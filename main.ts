@@ -3,6 +3,7 @@ import blog, {
   redirects,
   h,
 } from "https://raw.githubusercontent.com/tkgstrator/deno_blog/main/blog.tsx";
+import highlightJs from "https://cdn.skypack.dev/highlight.js@11.6.0?dts";
 
 blog({
   title: "まちカドえむいー",

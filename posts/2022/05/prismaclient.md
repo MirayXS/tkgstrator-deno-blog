@@ -460,11 +460,8 @@ find(id: number): Promise<UserModel> {
 
 `findUnique()`で検索して、なければ`NotFoundException()`を返せば良い。
 
-::: tip rejectOnNotFound を利用する
-
-Prisma 側にユニーク検索でヒットしなかった場合にエラーを返す仕組みが存在した！なので`null`チェックは不要でした。
-
-:::
+> tip rejectOnNotFound を利用する
+> Prisma 側にユニーク検索でヒットしなかった場合にエラーを返す仕組みが存在した！なので`null`チェックは不要でした。
 
 ```ts
 async find(id: number): Promise<UserModel> {
@@ -486,11 +483,8 @@ async find(id: number): Promise<UserModel> {
 
 次は既存のユーザのデータをアップデートしようとした場合にエラーを返すことを想定する。アップデート用のデータを受ける場合には`Prisma.UserUpdateInput`という便利な型が使えるのでこれを利用する。
 
-::: tip 便利な型
-
-Prisma で定義したモデルのものが使える。`Book`を定義して、それをアップデートしたい場合には`Prisma.BookUpdateInput`を利用すれば良い。
-
-:::
+> tip 便利な型
+> Prisma で定義したモデルのものが使える。`Book`を定義して、それをアップデートしたい場合には`Prisma.BookUpdateInput`を利用すれば良い。
 
 ```ts
 async update(id: number, data: Prisma.UserUpdateInput): Promise<UserModel> {

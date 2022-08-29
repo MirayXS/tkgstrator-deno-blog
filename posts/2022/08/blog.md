@@ -4,6 +4,7 @@ publish_date: 2022-08-22
 description: VuePressに希望がなさすぎました
 tags:
   - プログラミング
+  - Deno
 ---
 
 ## さようなら VuePress

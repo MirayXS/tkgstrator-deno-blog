@@ -11,9 +11,9 @@ import "https://esm.sh/prismjs@1.28.0/components/prism-json.min?no-check";
 import "https://esm.sh/prismjs@1.28.0/components/prism-scheme.min?no-check";
 
 blog({
-  title: "まちカドえむいー",
+  title: "ぼっち・ざ・えむいー",
   description: "スターライトアーニャです",
-  avatar: "/assets/03.png",
+  avatar: "/assets/ico_ep2_01.png",
   avatarClass: "rounded-full",
   author: "tkgstrator",
   // cover: "https://tkgstrator.deno.dev/assets/header.jpeg",

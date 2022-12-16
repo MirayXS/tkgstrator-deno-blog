@@ -80,6 +80,43 @@ func scene(
 }
 ```
 
+## UIViewController
+
+たまに現在表示されている`ViewController`のインスタンスが欲しくなるときがあります。`present()`で何かを表示しようとしたら最前面の`ViewController`から呼ばないと何も起きないためです。
+
+Xcode13 くらいから`Deprecated`なメソッドが増えたので、Warning なしで`rootViewController`をとってくるには以下のようなコードが必要になります。
+
+```swift
+extension UIApplication {
+  internal var rootViewController: UIViewController? {
+    UIApplication.shared.connectedScenes
+      .filter({ $0.activationState == .foregroundActive })
+      .compactMap({ $0 as? UIWindowScene })
+      .first?
+      .windows
+      .first?
+      .rootViewController
+  }
+}
+```
+
+じゃあこれで動くのかというと常に動くわけではないのが玉に瑕。というのも、SwiftUI の場合は`sheet()`や`fullScreenCover()`でその View よりも更に上位の View が`presented`されている可能性があるため。上のコードは現在、表示されている View の親は返しますが、現在表示されている View とは限らないわけです。
+
+というわけで上のコードを拡張して現在の`UIViewController`を取得するコードは以下の通り。
+
+```swift
+extension UIApplication {
+  internal var current: UIViewController? {
+    if let current = rootViewController.presentedViewController {
+      return current
+    }
+    return rootViewController
+  }
+}
+```
+
+ただこれでも、上にどんどん重ねていると最前面の`UIViewController`は取れないのでそこは各自修正してください。
+
 ## UIView + SwiftUI
 
 ### UIHostingController
@@ -101,6 +138,8 @@ let hosting: UIHostingController = UIHostingController(rootView: ContentView())
 UIKit の`UIView`を SwiftUI の`View`に変換してくれます。
 
 どっちかというといつも`UIViewControllerRepresentable`を使うので出番はあまりなかったりする。
+
+## SwiftUI の拡張
 
 ### UITabBarController
 
@@ -173,6 +212,10 @@ struct ContentView: View {
   }
 }
 ```
+
+### UISplitViewController
+
+### UINavigationController
 
 ## Xcode
 

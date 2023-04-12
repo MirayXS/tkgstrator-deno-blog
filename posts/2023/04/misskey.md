@@ -379,7 +379,7 @@ A レコードに追加します。自分の場合は`splatnet3.com`というド
 普通に起動すると`~/misskey/files`にアクセス権限がなくて画像のアップロードに失敗します。
 
 ```
-sudo chmod 777 ~/misskey/misskey/files
+sudo chmod 777 ~/misskey/files
 ```
 
 で強引に書き込み権限を付けました。多分もっといい方法があるので緩募。

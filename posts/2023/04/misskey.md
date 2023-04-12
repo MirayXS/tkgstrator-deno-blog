@@ -339,7 +339,7 @@ dbReplications: false
 
 #### .config/docker.env
 
-```env
+```
 # db settings
 POSTGRES_PASSWORD={ パスワード }
 POSTGRES_USER={ ユーザー名 }
